@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerRight : MonoBehaviour {
+public class TriggerLeft : MonoBehaviour {
 
     public GameObject current_player;
 
@@ -13,11 +13,12 @@ public class TriggerRight : MonoBehaviour {
 
     void OnTriggerEnter2D()
     {
-        current_player.GetComponent<Movement>().rightobstacle = true;
+        current_player.GetComponent<Movement>().leftobstacle = true;
     }
 
     void OnTriggerExit2D()
     {
-        current_player.GetComponent<Movement>().rightobstacle = false;
+        current_player.GetComponent<Movement>().leftobstacle = false;
     }
+
 }
