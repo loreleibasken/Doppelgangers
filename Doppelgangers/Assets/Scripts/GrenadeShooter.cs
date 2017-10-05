@@ -19,7 +19,7 @@ public class GrenadeShooter : MonoBehaviour
     {
 		if(Input.GetButtonDown("Fire1"))
         {
-            Rigidbody2D instantiatedGrenade = Instantiate(grenade, transform.position, transform.rotation) as Rigidbody2D;
+            Rigidbody2D instantiatedGrenade = Instantiate(grenade, transform.position, transform.rotation);
             instantiatedGrenade.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
         }
 	}
