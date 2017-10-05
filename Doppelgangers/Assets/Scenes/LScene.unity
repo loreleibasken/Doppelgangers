@@ -373,6 +373,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52c7c027436d68f4aa6428f763011fbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 50305791649879398, guid: 17cc26816efc9664490029328e3e1ba0, type: 2}
+  grenade: {fileID: 50305791649879398, guid: 17cc26816efc9664490029328e3e1ba0, type: 2}
   projSpeed: 20
   Rotation: {x: 0, y: 0, z: 0}

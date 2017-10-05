@@ -4,20 +4,10 @@ using UnityEngine;
 
 public class Grenade : MonoBehaviour {
 
-    public Rigidbody2D arrow;                
+    public Rigidbody2D grenade;                
     public float projSpeed = 20f;            
     public Vector3 Rotation;              
     private Movement playerMove;
-    
-
-    void Awake()
-    {
-        // Setting up the references required
-        // playerMove = transform.root.GetComponent<PlayerMovement>();
-    }
-
-    
-
     
     void Update()
     {
@@ -25,10 +15,11 @@ public class Grenade : MonoBehaviour {
         if (Input.GetButtonDown("Fire1"))
         {
             // Instantiate an arrow!
-            Rigidbody2D arrowInstance = Instantiate(arrow, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
-            arrowInstance.velocity = new Vector2(projSpeed, 0);
+            Rigidbody2D grenadeInstance = Instantiate(grenade, transform.position, Quaternion.Euler(new Vector3(0, 0, 0))) as Rigidbody2D;
+            grenadeInstance.velocity = new Vector2(projSpeed, 0);
         }
     }
+
     /*
     void OnCollisionEnter2D(Collision2D collision)
     {
